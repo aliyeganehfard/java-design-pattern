@@ -1,10 +1,15 @@
 package com.design.pattern.creational.singleton;
 
 
-// lazy singleton
-public class DatabaseConnector {
+// eager singleton
+// thread safe
+public class DatabaseConnectorEager {
 
-    public final static DatabaseConnector INSTANCE = new DatabaseConnector();
+    public final static DatabaseConnectorEager INSTANCE = new DatabaseConnectorEager();
+
+    private DatabaseConnectorEager() {
+
+    }
 
     public void connect() {
         System.out.println("Connected to database");
