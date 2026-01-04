@@ -1,0 +1,8 @@
+package com.design.pattern.creational.factory.methodFactory.recommended;
+
+public class EmailNotification implements Notification {
+    @Override
+    public void send() {
+        System.out.println("Email Notification");
+    }
+}
