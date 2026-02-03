@@ -8,7 +8,7 @@ public class StockExchange implements Subject {
 
     private float price = 100;
     private final Random random;
-    private List<Observer> observers = new ArrayList<Observer>();
+    private final List<Observer> observers = new ArrayList<Observer>();
 
     public StockExchange() {
         random = new Random();
